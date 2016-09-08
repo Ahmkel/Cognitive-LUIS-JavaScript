@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Application of the unofficial JavaScript SDK for LUIS</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="ClientLibrary/luis.js"></script>
+    <script src="sample.js"></script>
+</head>
+<body style="margin:20px">
+    <br>
+    <h1>Welcome to the Sample Application of the unofficial JavaScript SDK for LUIS</h1>
+    <label>App Id</label>
+    <input type="text" id="appIdTxt" class="form-control" style="width:30%">
+    <br>
+    <label>App Key</label>
+    <input type="text" id="appKeyTxt" class="form-control" style="width:30%">
+    <br>
+    <label>Query</label>
+    <input type="text" id="queryTxt" class="form-control" style="width:30%">
+    <br>
+    <input type="button" value="Predict" onclick="Predict()" class="btn btn-primary">
+    <input type="button" value="Reply" onclick="Reply()" class="btn btn-primary">
+    <h3 id="msg"></h3>
+</body>
+</html>
