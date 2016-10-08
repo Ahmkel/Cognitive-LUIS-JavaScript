@@ -1,4 +1,3 @@
-var LUISClient;
 (function() {
     /**
      * This is the interface of the LUIS SDK
@@ -248,4 +247,6 @@ var LUISClient;
         }
         return s;
     };
+    
+    window.LUISClient = LUISClient;
 })();
