@@ -11,7 +11,7 @@
      * @returns {{predict: predict, reply: reply}} an object containing the functions that need to be used
      */
 
-    LUISClient = function (initData) {
+    var LUISClient = function (initData) {
         validateInitData(initData);
         var appId = initData.appId;
         var appKey = initData.appKey;
